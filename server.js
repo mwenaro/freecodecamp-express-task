@@ -8,7 +8,7 @@ const myApp = require('./myApp');
 const express = require('express');
 const app = express();
 
-app.use(myApp)
+app.use("/",myApp)
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use((req, res, next) => {
